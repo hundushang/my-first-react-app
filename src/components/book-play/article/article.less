@@ -1,0 +1,38 @@
+.article-wrapper {
+  .header-wrapper {
+    .headerBack {
+      padding: 8px 15px;
+      width: 28px;
+      height: 28px;
+      background: url('../images/btn-close.png') center center no-repeat;
+      background-size: 28px 28px;
+      .icon-arrow_lift {
+        display: none;
+      }
+    }
+  }
+  .article-content {
+    overflow-y: auto;
+    .article-item {
+      padding: 40px 0;
+      margin: 0 20px;
+      &:nth-child(2){
+        border-top: 1px dashed #ddd;
+      }
+      .article-title {
+        color: #666;
+        font-size: 14px;
+      }
+      .article-text {
+        margin-top: 6px;
+        font-size: 20px;
+        color: #333;
+        line-height: 24px;
+        &.explain {
+          font-size: 18px;
+          line-height: 26px;
+        }
+      }
+    }
+  }
+}

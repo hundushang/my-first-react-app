@@ -1,0 +1,49 @@
+@import "./reset.less";
+@import "./icon.less";
+
+
+body{
+  font-family: STHeiti,Microsoft YaHei,Helvetica,Arial,sans-serif;
+}
+.clearfix{
+  	&:after{
+	    content: '.';
+	    display: block;
+	    clear: both;
+	    height: 0;
+	    line-height: 0;
+	    visibility: hidden;
+  	}
+}
+.relative{
+  position: relative;
+}
+.cred{
+	color: red;
+}
+.cgreen{
+	color: green;
+}
+.cf60{
+	color: #cf6000;
+}
+.tac{
+	text-align: center;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5),(min-device-pixel-ratio: 1.5) {
+  .border-1px{
+    &::before,&::after{
+      -webkit-transform: scaleY(0.7);
+      transform: scaleY(0.7);
+    }
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),(min-device-pixel-ratio: 2) {
+  .border-1px{
+    &::before,&::after{
+      -webkit-transform: scaleY(0.5);
+      transform: scaleY(0.5);
+    }
+  }
+}

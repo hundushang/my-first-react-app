@@ -1,0 +1,51 @@
+@import '../../assets/less/lessfn';
+.newword-wrapper {
+  .border-t-1px(#ddd);
+  .word-item {
+    background: #fdfdfd;
+    height: 89px;
+    display: flex;
+    padding: 0 20px 0 15px;
+    .border-1px(#ddd);
+    .text-box {
+      flex: 1;
+      .word {
+        margin-top: 20px;
+        color: #333;
+        font-size: 24px;
+        line-height: 24px;
+      }
+      .explanation {
+        margin-top: 10px;
+        font-size: 15px;
+        color: #666;
+      }
+    }
+    .icon-audio {
+      margin-top: 31px;
+      width: 26px;
+      height: 26px;
+      background: url('./images/icon-play.png') no-repeat;
+      background-size: 100% 100%;
+    }
+    &.current {
+      .text-box {
+        .word {
+          color: #ff683e;
+        }
+      }
+      .icon-audio {
+        animation: an_audio 0.8s steps(1, start) infinite;
+      }
+      @keyframes an_audio {
+        0%,
+        100% {
+          background-image: url('./images/icon-play.png');
+        }
+        50% {
+          background-image: url('./images/icon-play-current.png');
+        }
+      }
+    }
+  }
+}

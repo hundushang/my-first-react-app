@@ -1,0 +1,93 @@
+@import '../../assets/less/lessfn';
+.seriebook-wrapper {
+  background: #f4f4f4 !important;
+  .absolute-top44 {
+    overflow-y: auto;
+  }
+  .desc-wrapper {
+    padding: 20px 15px 15px;
+    background: url('./images/seriebg.png') #fff8f5 center center no-repeat;
+    background-size: 89.3% auto;
+    .border-1px(#ddd);
+    .img-box {
+      margin: 0 auto;
+      position: relative;
+      width: 46.4%;
+      padding-top: 49%;
+      background: url('./images/serie-bookbg.png') no-repeat;
+      background-size: 100% 100%;
+      .img-wrapper {
+        position: absolute;
+        top: 0;
+        left: 7%;
+        display: block;
+        margin-top: 6.5%;
+        width: 81.9%;
+        bottom: 0.5%;
+      }
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: block;
+        max-height: 100%;
+      }
+      .bookleft {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 8px;
+        background: url('./images/bookleft.png') no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+    .img-box-bottom {
+      margin: -2.3% auto 0;
+      width: 71.4%;
+      padding-top: 9.3%;
+      background: url('./images/serie-book-bottom.png') no-repeat;
+      background-size: 100% 100%;
+    }
+    .text {
+      font-size: 15px;
+      color: #666666;
+      line-height: 21px;
+      text-indent: 2em;
+    }
+  }
+  .seriebook-list-wrapper {
+    margin-top: 10px;
+    background: #fff;
+    .border-t-1px(#ddd);
+    padding-top: 20px;
+    padding-bottom: 15px;
+    .serie-item {
+      margin-bottom: 15px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      .title {
+        font-size: 0;
+        padding: 0 4%;
+        &::before {
+          width: 3px;
+          height: 18px;
+          background: #ff683e;
+          border-radius: 2px;
+          content: '';
+          display: inline-block;
+          vertical-align: top;
+        }
+        .text {
+          margin-left: 5px;
+          display: inline-block;
+          vertical-align: top;
+          font-size: 18px;
+          color: #333333;
+        }
+      }
+    }
+  }
+}
